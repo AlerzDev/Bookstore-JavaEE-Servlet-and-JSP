@@ -1,6 +1,7 @@
-package com.bookstore.servlets.book;
+package com.bookstore.servlets.municipality;
 
-import com.bookstore.repositories.BookRepository;
+import com.bookstore.repositories.MunicipalityRepository;
+import com.bookstore.repositories.StateRepository;
 
 import javax.inject.Inject;
 import javax.servlet.RequestDispatcher;
@@ -12,20 +13,24 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "BookPageServlet",urlPatterns = "/BookPageAdmin")
-public class BookPageServlet extends HttpServlet {
+@WebServlet(name = "MunicipalityPageAdminServlet",urlPatterns = "/MunicipalityPageAdmin")
+public class MunicipalityPageAdminServlet extends HttpServlet {
 
     @Inject
-    private BookRepository services;
+    private StateRepository servicesState;
+
+    @Inject
+    private MunicipalityRepository servicesMunicipality;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setAttribute("list",services.GetBooksActive());
+        request.setAttribute("listState",servicesState.getAll());
+        request.setAttribute("listMunicipality",servicesMunicipality.getAll());
         ServletContext context= getServletContext();
-        RequestDispatcher rd= context.getRequestDispatcher("/admin/admin_books.jsp");
+        RequestDispatcher rd= context.getRequestDispatcher("/admin/admin_municipalities.jsp");
         rd.forward(request, response);
     }
 }

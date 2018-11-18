@@ -9,6 +9,8 @@ $(document).ready(function(){
         var action = button.attr("name");
         var servlet = button.attr("value");
         var data = getJSON($form);
+        console.log(data);
+        debugger;
         swal({
             title: 'Saving...',
             onOpen: function () {

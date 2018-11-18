@@ -2,6 +2,15 @@
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
     <persistence-unit name="bookStore"
                       transaction-type="RESOURCE_LOCAL">
+        <class>com.bookstore.daos.Country</class>
+        <class>com.bookstore.daos.State</class>
+        <class>com.bookstore.daos.Municipality</class>
+        <class>com.bookstore.daos.Status</class>
+        <class>com.bookstore.daos.Author</class>
+        <class>com.bookstore.daos.Format</class>
+        <class>com.bookstore.daos.Genre</class>
+        <class>com.bookstore.daos.Language</class>
+        <class>com.bookstore.daos.Editorial</class>
         <class>com.bookstore.daos.Book</class>
         <properties>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/Bookstore?autoReconnect=true&amp;useSSL=false"/>

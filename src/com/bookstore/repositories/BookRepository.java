@@ -73,7 +73,7 @@ public class BookRepository extends RepositoryBase {
         List<Book> items = new ArrayList<>();
         try{
             entityManager.clear();
-            TypedQuery<Book> query = entityManager.createQuery("SELECT c FROM Book c WHERE c.YearCreate = current_date",Book.class);
+            TypedQuery<Book> query = entityManager.createQuery("SELECT c FROM Book c WHERE c.Year = current_date",Book.class);
             items = query.getResultList();
         }catch (Exception ex)
         {

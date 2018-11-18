@@ -1,200 +1,228 @@
 package com.bookstore.daos;
 
-import javax.persistence.*;
-import java.sql.Date;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Entity
-@Table
 public class Book {
-    @javax.persistence.Id
-    @GeneratedValue(strategy= GenerationType.TABLE)
-    private int Id;
-    @Column(length = 50)
-    private String Editorial;
-    @Column(length = 150)
-    private String Title;
-    @Column(length = 10)
-    private int ReferenceNumber;
-    @Column(length = 6)
-    private int Popularity;
-    @Column(length = 50)
-    private String ISBN;
-    @Column(length = 50)
-    private String EAN;
-    private Date YearCreate;
-    @Column(length = 5)
-    private int NumberOfPages;
-    @Column(length = 50)
-    private String Edition;
-    @Column(length = 10)
-    private double Price;
-    @Column(length = 6)
-    private int Stock;
-    @Column(length = 200)
-    private String Details;
-    @Column(length = 1)
-    private boolean Active;
-    private Date RegDate;
 
-    public Book(String editorial, String title, int referenceNumber, int popularity, String ISBN, String EAN, Date yearCreate, int numberOfPages, String edition, double price, int stock, String details, boolean active, Date regDate) {
-        Editorial = editorial;
-        Title = title;
-        ReferenceNumber = referenceNumber;
-        this.Popularity = popularity;
-        this.ISBN = ISBN;
-        this.EAN = EAN;
-        YearCreate = yearCreate;
-        NumberOfPages = numberOfPages;
-        Edition = edition;
-        Price = price;
-        Stock = stock;
-        Details = details;
-        Active = active;
-        RegDate = regDate;
-    }
+  @Id
+  @GeneratedValue
+  private long Id;
+  @Column(length = 45)
+  private String Title;
+  @Column(length = 11)
+  private long ReferenceNumber;
+  @Column(length = 11)
+  private long Popularity;
+  @Column(length = 45)
+  private String ISBN;
+  @Column(length = 45)
+  private String EAN;
+  private java.sql.Date Year;
+  @Column(length = 11)
+  private long NumberOfPages;
+  @Column(length = 45)
+  private String Edition;
+  @Column(length = 10)
+  private double Price;
+  @Column(length = 11)
+  private long Stock;
+  @Column(length = 45)
+  private String Details;
+  private java.sql.Date RegDate;
+  @Column(length = 11)
+  private long Genre;
+  @Column(length = 11)
+  private long Format;
+  @Column(length = 11)
+  private long Editorial;
+  @Column(length = 11)
+  private long Language;
+  @Column(length = 11)
+  private long Status;
+  private String Image;
+  @Column(length = 11)
+  private long Author;
 
-    public Book() {
-        super();
-    }
+  public long getAuthor() {
+    return Author;
+  }
 
-    public int getId() {
-        return Id;
-    }
+  public void setAuthor(long author) {
+    Author = author;
+  }
 
-    public void setId(int id) {
-        Id = id;
-    }
+  public long getId() {
+    return Id;
+  }
 
-    public String getEditorial() {
-        return Editorial;
-    }
+  public void setId(long id) {
+    this.Id = id;
+  }
 
-    public void setEditorial(String editorial) {
-        Editorial = editorial;
-    }
 
-    public String getTitle() {
-        return Title;
-    }
+  public String getTitle() {
+    return Title;
+  }
 
-    public void setTitle(String title) {
-        Title = title;
-    }
+  public void setTitle(String title) {
+    this.Title = title;
+  }
 
-    public int getReferenceNumber() {
-        return ReferenceNumber;
-    }
 
-    public void setReferenceNumber(int referenceNumber) {
-        ReferenceNumber = referenceNumber;
-    }
+  public long getReferenceNumber() {
+    return ReferenceNumber;
+  }
 
-    public int getPopularity() {
-        return Popularity;
-    }
+  public void setReferenceNumber(long referenceNumber) {
+    this.ReferenceNumber = referenceNumber;
+  }
 
-    public void setPopularity(int popularity) {
-        this.Popularity = popularity;
-    }
 
-    public String getISBN() {
-        return ISBN;
-    }
+  public long getPopularity() {
+    return Popularity;
+  }
 
-    public void setISBN(String ISBN) {
-        this.ISBN = ISBN;
-    }
+  public void setPopularity(long popularity) {
+    this.Popularity = popularity;
+  }
 
-    public String getEAN() {
-        return EAN;
-    }
 
-    public void setEAN(String EAN) {
-        this.EAN = EAN;
-    }
+  public String getIsbn() {
+    return ISBN;
+  }
 
-    public Date getYearCreate() {
-        return YearCreate;
-    }
+  public void setIsbn(String isbn) {
+    this.ISBN = isbn;
+  }
 
-    public void setYearCreate(Date yearCreate) {
-        YearCreate = yearCreate;
-    }
 
-    public int getNumberOfPages() {
-        return NumberOfPages;
-    }
+  public String getEan() {
+    return EAN;
+  }
 
-    public void setNumberOfPages(int numberOfPages) {
-        NumberOfPages = numberOfPages;
-    }
+  public void setEan(String ean) {
+    this.EAN = ean;
+  }
 
-    public String getEdition() {
-        return Edition;
-    }
 
-    public void setEdition(String edition) {
-        Edition = edition;
-    }
+  public java.sql.Date getYear() {
+    return Year;
+  }
 
-    public double getPrice() {
-        return Price;
-    }
+  public void setYear(java.sql.Date year) {
+    this.Year = year;
+  }
 
-    public void setPrice(double price) {
-        Price = price;
-    }
 
-    public int getStock() {
-        return Stock;
-    }
+  public long getNumberOfPages() {
+    return NumberOfPages;
+  }
 
-    public void setStock(int stock) {
-        Stock = stock;
-    }
+  public void setNumberOfPages(long numberOfPages) {
+    this.NumberOfPages = numberOfPages;
+  }
 
-    public String getDetails() {
-        return Details;
-    }
 
-    public void setDetails(String details) {
-        Details = details;
-    }
+  public String getEdition() {
+    return Edition;
+  }
 
-    public boolean isActive() {
-        return Active;
-    }
+  public void setEdition(String edition) {
+    this.Edition = edition;
+  }
 
-    public void setActive(boolean active) {
-        Active = active;
-    }
 
-    public Date getRegDate() {
-        return RegDate;
-    }
+  public double getPrice() {
+    return Price;
+  }
 
-    public void setRegDate(Date regDate) {
-        RegDate = regDate;
-    }
+  public void setPrice(double price) {
+    this.Price = price;
+  }
 
-    @Override
-    public String toString() {
-        return "book{" +
-                "Id=" + Id +
-                ", Editorial='" + Editorial + '\'' +
-                ", Title='" + Title + '\'' +
-                ", ReferenceNumber=" + ReferenceNumber +
-                ", popularity=" + Popularity +
-                ", ISBN='" + ISBN + '\'' +
-                ", EAN='" + EAN + '\'' +
-                ", YearCreate=" + YearCreate +
-                ", NumberOfPages=" + NumberOfPages +
-                ", Edition='" + Edition + '\'' +
-                ", Price=" + Price +
-                ", Stock='" + Stock + '\'' +
-                ", Details='" + Details + '\'' +
-                ", Active=" + Active +
-                ", RegDate=" + RegDate +
-                '}';
-    }
+
+  public long getStock() {
+    return Stock;
+  }
+
+  public void setStock(long stock) {
+    this.Stock = stock;
+  }
+
+
+  public String getDetails() {
+    return Details;
+  }
+
+  public void setDetails(String details) {
+    this.Details = details;
+  }
+
+
+  public java.sql.Date getRegDate() {
+    return RegDate;
+  }
+
+  public void setRegDate(java.sql.Date regDate) {
+    this.RegDate = regDate;
+  }
+
+
+  public long getGenre() {
+    return Genre;
+  }
+
+  public void setGenre(long genre) {
+    this.Genre = genre;
+  }
+
+
+  public long getFormat() {
+    return Format;
+  }
+
+  public void setFormat(long format) {
+    this.Format = format;
+  }
+
+
+  public long getEditorial() {
+    return Editorial;
+  }
+
+  public void setEditorial(long editorial) {
+    this.Editorial = editorial;
+  }
+
+
+  public long getLanguage() {
+    return Language;
+  }
+
+  public void setLanguage(long language) {
+    this.Language = language;
+  }
+
+
+  public long getStatus() {
+    return Status;
+  }
+
+  public void setStatus(long status) {
+    this.Status = status;
+  }
+
+
+  public String getImage() {
+    return Image;
+  }
+
+  public void setImage(String image) {
+    this.Image = image;
+  }
+
 }

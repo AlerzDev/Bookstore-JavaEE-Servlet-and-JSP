@@ -118,38 +118,53 @@
                     <!-- Navigation -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html">
-                                <i class="ni ni-tv-2 text-primary"></i> Dashboard
+                            <a class="nav-link" href="${pageContext.request.contextPath}/CountryPageAdmin">
+                                <i class="ni ni-tv-2 text-primary"></i> Countries
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./examples/icons.html">
-                                <i class="ni ni-planet text-blue"></i> Icons
+                            <a class="nav-link" href="${pageContext.request.contextPath}/StatePageAdmin">
+                                <i class="ni ni-planet text-blue"></i> States
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./examples/maps.html">
-                                <i class="ni ni-pin-3 text-orange"></i> Maps
+                            <a class="nav-link" href="${pageContext.request.contextPath}/MunicipalityPageAdmin">
+                                <i class="ni ni-pin-3 text-orange"></i> Municipalities
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./examples/profile.html">
-                                <i class="ni ni-single-02 text-yellow"></i> User profile
+                            <a class="nav-link" href="${pageContext.request.contextPath}/StatusPageAdmin">
+                                <i class="ni ni-single-02 text-yellow"></i> Status
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./examples/tables.html">
-                                <i class="ni ni-bullet-list-67 text-red"></i> Tables
+                            <a class="nav-link" href="${pageContext.request.contextPath}/AuthorPageAdmin">
+                                <i class="ni ni-bullet-list-67 text-red"></i> Authors
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./examples/login.html">
-                                <i class="ni ni-key-25 text-info"></i> Login
+                            <a class="nav-link" href="${pageContext.request.contextPath}/FormatPageAdmin">
+                                <i class="ni ni-key-25 text-info"></i> Formats
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./examples/register.html">
-                                <i class="ni ni-circle-08 text-pink"></i> Register
+                            <a class="nav-link" href="${pageContext.request.contextPath}/GenrePageAdmin">
+                                <i class="ni ni-circle-08 text-pink"></i> Genres
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="${pageContext.request.contextPath}/LanguagePageAdmin">
+                                <i class="ni ni-circle-08 text-pink"></i> Languages
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="${pageContext.request.contextPath}/EditorialPageAdmin">
+                                <i class="ni ni-circle-08 text-pink"></i> Editorials
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="${pageContext.request.contextPath}/BookPageAdmin">
+                                <i class="ni ni-circle-08 text-pink"></i> Books
                             </a>
                         </li>
                     </ul>

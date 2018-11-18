@@ -1,8 +1,8 @@
-package com.bookstore.servlets.book;
+package com.bookstore.servlets.language;
 
-import com.bookstore.daos.Book;
+import com.bookstore.daos.Language;
 import com.bookstore.models.Response;
-import com.bookstore.repositories.BookRepository;
+import com.bookstore.repositories.LanguageRepository;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonSyntaxException;
@@ -18,11 +18,11 @@ import java.io.PrintWriter;
 import java.sql.Date;
 import java.util.Calendar;
 
-@WebServlet(name = "BookServlet",urlPatterns = "/Book")
-public class BookServlet extends HttpServlet {
+@WebServlet(name = "LanguageServlet",urlPatterns = "/Language")
+public class LanguageServlet extends HttpServlet {
 
     @Inject
-    private BookRepository services;
+    private LanguageRepository services;
 
     private Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd").create();
 
@@ -32,9 +32,8 @@ public class BookServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         Response res = new Response();
         try {
-            Book data = gson.fromJson(request.getReader(), Book.class);
+            Language data = gson.fromJson(request.getReader(), Language.class);
             data.setRegDate(new Date(Calendar.getInstance().getTime().getTime()));
-            data.setImage("jsdhjksfklks");
             boolean test = services.insert(data);
             res.setSuccess(test);
         }catch (IllegalStateException | JsonSyntaxException exception){
@@ -53,7 +52,7 @@ public class BookServlet extends HttpServlet {
         Response data = new Response();
         try {
             int id = Integer.parseInt(request.getParameter("id"));
-            Book item = services.getById((id));
+            Language item = services.getById((id));
             if( item != null) {
                 data.setSuccess(true);
                 data.setItem(gson.toJson(item));
@@ -66,26 +65,6 @@ public class BookServlet extends HttpServlet {
         }
         String success = gson.toJson(data);
         out.print(success);
-        out.flush();
-    }
-
-    @Override
-    protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        PrintWriter out = response.getWriter();
-        response.setContentType("application/json");
-        response.setCharacterEncoding("UTF-8");
-        Response res = new Response();
-        try {
-            Book data = gson.fromJson(request.getReader(), Book.class);
-            data.setRegDate(new Date(Calendar.getInstance().getTime().getTime()));
-            boolean test = services.updateItem(data);
-            res.setSuccess(test);
-        }catch (IllegalStateException | JsonSyntaxException exception){
-            exception.printStackTrace();
-            res.setSuccess(false);
-        }
-        String employeeJsonString = gson.toJson(res);
-        out.print(employeeJsonString);
         out.flush();
     }
 
@@ -103,6 +82,26 @@ public class BookServlet extends HttpServlet {
             data.setSuccess(false);
         }
         String employeeJsonString = gson.toJson(data);
+        out.print(employeeJsonString);
+        out.flush();
+    }
+
+    @Override
+    protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        PrintWriter out = response.getWriter();
+        response.setContentType("application/json");
+        response.setCharacterEncoding("UTF-8");
+        Response res = new Response();
+        try {
+            Language data = gson.fromJson(request.getReader(), Language.class);
+            data.setRegDate(new Date(Calendar.getInstance().getTime().getTime()));
+            boolean test = services.updateItem(data);
+            res.setSuccess(test);
+        }catch (IllegalStateException | JsonSyntaxException exception){
+            exception.printStackTrace();
+            res.setSuccess(false);
+        }
+        String employeeJsonString = gson.toJson(res);
         out.print(employeeJsonString);
         out.flush();
     }

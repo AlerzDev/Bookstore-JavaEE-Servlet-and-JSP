@@ -86,8 +86,7 @@
               <div class="card-body">
                 <p class="card-text"><strong>Title: </strong>${current.getTitle()}</p>
                 <p class="card-text"><strong>Price: </strong>${current.getPrice()}</p>
-                <p class="card-text"><strong>Editorial: </strong>${current.getEditorial()}</p>
-                <p class="card-text"><strong>ISBN: </strong>${current.getISBN()}</p>
+                <p class="card-text"><strong>ISBN: </strong>${current.getIsbn()}</p>
                 <div class="row align-content-center">
                   <div class="col-md-6"><button class="btn btn-info" data-toggle="modal" data-target="#myModal">View</button></div>
                   <div class="col-md-6"><button class="btn btn-success">Sale</button></div>
@@ -112,8 +111,7 @@
               <div class="card-body">
                 <p class="card-text"><strong>Title: </strong>${current.getTitle()}</p>
                 <p class="card-text"><strong>Price: </strong>${current.getPrice()}</p>
-                <p class="card-text"><strong>Editorial: </strong>${current.getEditorial()}</p>
-                <p class="card-text"><strong>ISBN: </strong>${current.getISBN()}</p>
+                <p class="card-text"><strong>ISBN: </strong>${current.getIsbn()}</p>
                 <div class="row align-content-center">
                   <div class="col-md-6"><button class="btn btn-info">View</button></div>
                   <div class="col-md-6"><button class="btn btn-success">Sale</button></div>
