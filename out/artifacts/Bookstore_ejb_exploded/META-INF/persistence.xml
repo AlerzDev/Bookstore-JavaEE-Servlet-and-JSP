@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="bookStore"
+                      transaction-type="RESOURCE_LOCAL">
+
+        <class>entities.Status</class>
+        <class>entities.Municipality</class>
+        <class>entities.State</class>
+        <class>entities.Country</class>
+        <class>entities.UserBookstore</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://192.168.0.14:3306/Bookstore?autoReconnect=true&amp;useSSL=false"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="alamierda123"/>
+            <property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema(ForeignKeys=true)"/>
+        </properties>
+    </persistence-unit>
+</persistence>
