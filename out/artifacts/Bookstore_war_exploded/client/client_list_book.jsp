@@ -24,13 +24,13 @@
                     <c:forEach items="${books}" var="current" varStatus="loop">
                       <div class="col-md-4">
                           <div class="card" style="width: 20rem;">
-                              <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" alt="Card image cap">
+                              <img class="card-img-top" src="${pageContext.request.contextPath}/GetImage?IdBook=${current.getId()}" alt="Card image cap">
                               <div class="card-body">
                                   <p class="card-text"><strong>Title: </strong>${current.getTitle()}</p>
                                   <p class="card-text"><strong>Price: </strong>${current.getPrice()}</p>
                                   <p class="card-text"><strong>ISBN: </strong>${current.getIsbn()}</p>
                                   <div class="row">
-                                      <div class="col-md-12 text-center"><button onclick="addBookCar(${current.getId()})" class="btn btn-success">Buy</button></div>
+                                      <div class="col-md-12 text-center"><button onclick="addBookCar(${current.getId()})" class="btn btn-success">Comprar</button></div>
                                   </div>
                               </div>
                           </div>

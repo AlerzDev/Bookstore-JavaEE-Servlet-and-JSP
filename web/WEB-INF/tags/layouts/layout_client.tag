@@ -59,7 +59,23 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="dropdown nav-item">
                             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                                <i class="material-icons">apps</i> Catalogo
+                                <i class="material-icons">apps</i> Generos
+                            </a>
+                            <div class="dropdown-menu dropdown-with-icons">
+                                <c:forEach items="${listGenre}" var="current">
+                                    <form id="my_form_1" method="get" action="${pageContext.request.contextPath}/ListBookGenrePage">
+                                        <input type="hidden" name="genre" value="${current.getId()}" />
+                                        <input type="hidden" name="namePage" value="${current.getDescription()}" />
+                                        <a href="javascript:{}" onclick="document.getElementById('my_form_1').submit();" class="dropdown-item" >
+                                            <i class="material-icons">book</i> ${current.getDescription()}
+                                        </a >
+                                    </form>
+                                </c:forEach>
+                            </div>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                <i class="material-icons">apps</i> Formatos
                             </a>
                             <div class="dropdown-menu dropdown-with-icons">
                                 <c:forEach items="${listFormat}" var="current">

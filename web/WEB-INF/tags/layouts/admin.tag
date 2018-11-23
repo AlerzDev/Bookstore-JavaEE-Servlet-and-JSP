@@ -36,7 +36,7 @@
                 </button>
                 <!-- Brand -->
                 <a class="navbar-brand pt-0" href="./index.html">
-                    <img src="${pageContext.request.contextPath}/admin/assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
+                    <h2>Bookstore Admin</h2>
                 </a>
                 <ul class="nav align-items-center d-md-none">
                     <li class="nav-item dropdown">

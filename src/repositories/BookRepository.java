@@ -125,6 +125,21 @@ public class BookRepository extends RepositoryBase {
         return  items;
     }
 
+    public List<Book> getGenreBooks(int genre)
+    {
+        List<Book> items = new ArrayList<>();
+        try{
+            entityManager.clear();
+            TypedQuery<Book> query = entityManager.createQuery("SELECT c FROM Book c WHERE c.Genre = :genre",Book.class)
+                    .setParameter("genre",genre);
+            items = query.getResultList();
+        }catch (Exception ex)
+        {
+            ex.printStackTrace();
+        }
+        return  items;
+    }
+
     public byte[] getArrayImage(long id){
         try{
             return entityManager.find(Book.class, id).getImage();

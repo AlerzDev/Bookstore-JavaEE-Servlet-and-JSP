@@ -2,6 +2,7 @@ package servlets.book;
 
 import repositories.BookRepository;
 import repositories.FormatRepository;
+import repositories.GenreRepository;
 
 import javax.inject.Inject;
 import javax.servlet.RequestDispatcher;
@@ -22,8 +23,12 @@ public class ListBookPageServlet extends HttpServlet {
     @Inject
     private FormatRepository serviceFormat;
 
+    @Inject
+    private GenreRepository serviceGenre;
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int format = Integer.parseInt(request.getParameter("format"));
+        request.setAttribute("listGenre",serviceGenre.getAll());
         request.setAttribute("books",services.getFormatBooks(format));
         request.setAttribute("listFormat", serviceFormat.getAllItems());
         request.setAttribute("namePage",request.getParameter("namePage"));

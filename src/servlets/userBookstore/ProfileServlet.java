@@ -46,6 +46,9 @@ public class ProfileServlet extends HttpServlet {
     @Inject
     private BookRepository servicesBook;
 
+    @Inject
+    private GenreRepository serviceGenre;
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         SessionBean session = (SessionBean) request.getSession().getAttribute("currentSession");
         List<UserBookstoreCustomerPayment> listRelations = serviceUserCustomer.getItemsByID(session.currentSession().getId());
@@ -60,6 +63,7 @@ public class ProfileServlet extends HttpServlet {
         request.setAttribute("listBank", serviceBank.getAll());
         request.setAttribute("listCompany", serviceCompany.getAll());
         request.setAttribute("listType", serviceType.getAll());
+        request.setAttribute("listGenre",serviceGenre.getAll());
         ServletContext context= getServletContext();
         RequestDispatcher rd= context.getRequestDispatcher("/client/client_profile.jsp");
         rd.forward(request, response);

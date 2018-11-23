@@ -5,6 +5,7 @@ import entities.CustomerPaymentCard;
 import entities.UserBookstoreCustomerPayment;
 import repositories.CustomerPaymentCardRepository;
 import repositories.FormatRepository;
+import repositories.GenreRepository;
 import repositories.UserBookstoreCustomerPaymentRepository;
 
 import javax.inject.Inject;
@@ -30,6 +31,8 @@ public class ShoppingCarPageServlet extends HttpServlet {
 
     @Inject
     private CustomerPaymentCardRepository serviceCard;
+    @Inject
+    private GenreRepository serviceGenre;
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         SessionBean session = (SessionBean) request.getSession().getAttribute("currentSession");
@@ -40,6 +43,7 @@ public class ShoppingCarPageServlet extends HttpServlet {
         }
         request.setAttribute("listCards", listCards);
         request.setAttribute("listFormat", serviceFormat.getAllItems());
+        request.setAttribute("listGenre",serviceGenre.getAll());
         ServletContext context= getServletContext();
         RequestDispatcher rd= context.getRequestDispatcher("/client/client_list_car.jsp");
         rd.forward(request, response);

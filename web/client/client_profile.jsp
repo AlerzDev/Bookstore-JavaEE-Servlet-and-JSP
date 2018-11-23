@@ -12,9 +12,6 @@
                     <div class="row">
                         <div class="col-md-6 ml-auto mr-auto">
                             <div class="profile">
-                                <div class="avatar">
-                                    <img src="${pageContext.request.contextPath}/client/assets/img/faces/christian.jpg" alt="Circle Image" class="img-raised rounded-circle img-fluid">
-                                </div>
                                 <div class="name">
                                     <h3>${currentSession.currentSession().username}</h3>
                                     <h3>${currentSession.currentSession().email}</h3>

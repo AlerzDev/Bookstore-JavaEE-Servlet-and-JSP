@@ -51,9 +51,7 @@
                     <c:forEach items="${booksOffers}" var="current">
                       <div class="col-md-4">
                           <div class="card" style="width: 20rem;">
-                              <img class="card-img-top"
                               <img class="card-img-top" src="${pageContext.request.contextPath}/GetImage?IdBook=${current.getId()}" alt="Card image cap">
-                                   alt="Card image cap">
                               <div class="card-body">
                                   <p class="card-text"><strong>Title: </strong>${current.getTitle()}</p>
                                   <p class="card-text"><strong>Price: </strong>${current.getPrice()}</p>
@@ -78,30 +76,30 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <h4 class="text-center description">Divide details about your product or agency work into parts. Write a few lines about each one and contact us about any further collaboration. We will responde get back to you in a couple of hours.</h4>
-                        <form class="contact-form">
+                        <h4 class="text-center description">Cuentanos si tienes alguna duda o necesidad</h4>
+                        <form class="contact-form" action="SendEmail" method="post">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group bmd-form-group">
-                                        <label class="bmd-label-floating">Your Name</label>
-                                        <input type="email" class="form-control">
+                                        <label class="bmd-label-floating">Tu nombre</label>
+                                        <input type="text" class="form-control" id="name" name="name">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group bmd-form-group">
-                                        <label class="bmd-label-floating">Your Email</label>
-                                        <input type="email" class="form-control">
+                                        <label class="bmd-label-floating">Tu Email</label>
+                                        <input type="email" class="form-control" id="email" name="email">
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group bmd-form-group">
-                                <label for="exampleMessage" class="bmd-label-floating">Your Message</label>
-                                <textarea type="email" class="form-control" rows="4" id="exampleMessage"></textarea>
+                                <label for="msg" class="bmd-label-floating">Tu mensaje</label>
+                                <textarea type="email" class="form-control" rows="4" id="msg" name="msg"></textarea>
                             </div>
                             <div class="row">
                                 <div class="col-md-4 ml-auto mr-auto text-center">
-                                    <button class="btn btn-primary btn-raised">
-                                        Send Message
+                                    <button type="submit" class="btn btn-primary btn-raised">
+                                        Enviar
                                     </button>
                                 </div>
                             </div>
