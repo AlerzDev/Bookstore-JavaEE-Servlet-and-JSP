@@ -1,5 +1,6 @@
 <%@taglib prefix="layout" tagdir="/WEB-INF/tags/layouts" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+
 <layout:layout_client>
     <jsp:attribute name="title">BookStore Home</jsp:attribute>
     <jsp:attribute name="content_body">
@@ -26,14 +27,13 @@
                     <c:forEach items="${booksNews}" var="current">
                       <div class="col-md-4">
                           <div class="card" style="width: 20rem;">
-                              <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" alt="Card image cap">
+                              <img width="300" height="300" class="card-img-top" src="${pageContext.request.contextPath}/GetImage?IdBook=${current.getId()}" alt="Card image cap">
                               <div class="card-body">
                                   <p class="card-text"><strong>Title: </strong>${current.getTitle()}</p>
                                   <p class="card-text"><strong>Price: </strong>${current.getPrice()}</p>
                                   <p class="card-text"><strong>ISBN: </strong>${current.getIsbn()}</p>
-                                  <div class="row align-content-center">
-                                      <div class="col-md-6"><button class="btn btn-info" data-toggle="modal" data-target="#myModal">View</button></div>
-                                      <div class="col-md-6"><button class="btn btn-success">Sale</button></div>
+                                  <div class="row">
+                                      <div class="col-md-12 text-center"><button class="btn btn-success" onclick="addBookCar(${current.getId()})">Comprar</button></div>
                                   </div>
                               </div>
                           </div>
@@ -52,7 +52,7 @@
                       <div class="col-md-4">
                           <div class="card" style="width: 20rem;">
                               <img class="card-img-top"
-                                   src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80"
+                              <img class="card-img-top" src="${pageContext.request.contextPath}/GetImage?IdBook=${current.getId()}" alt="Card image cap">
                                    alt="Card image cap">
                               <div class="card-body">
                                   <p class="card-text"><strong>Title: </strong>${current.getTitle()}</p>
@@ -60,7 +60,7 @@
                                   <p class="card-text"><strong>ISBN: </strong>${current.getIsbn()}</p>
                                   <div class="row">
                                       <div class="col-md-12 text-center">
-                                          <button class="btn btn-success">Comprar</button>
+                                          <button class="btn btn-success" onclick="addBookCar(${current.getId()})">Comprar</button>
                                       </div>
                                   </div>
 
@@ -116,4 +116,35 @@
     </div>
 
   </jsp:attribute>
+    <jsp:attribute name="footer">
+        <script>
+            function addBookCar(id) {
+                if(isLogin){
+                    $.ajax({
+                        url: "CarBook",
+                        type : "GET",
+                        data : {idBook:id},
+                        success : function(data) {
+                            swal(
+                                'Success',
+                                'Se agrego al carrito',
+                                'success'
+                            );
+                            location.reload();
+                        },
+                        error: function(xhr, resp, text) {
+
+                        }
+                    });
+                }else{
+                    swal(
+                        'Error',
+                        'Debes iniciar sesion',
+                        'error'
+                    );
+                }
+
+            }
+        </script>
+    </jsp:attribute>
 </layout:layout_client>

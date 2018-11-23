@@ -16,7 +16,7 @@ function getJSON($form){
             var array = Array.from(bytes);
             console.log(array);
             indexed_array["Image"] = array;
-        }
+        };
         reader.readAsArrayBuffer(file);
 
     });

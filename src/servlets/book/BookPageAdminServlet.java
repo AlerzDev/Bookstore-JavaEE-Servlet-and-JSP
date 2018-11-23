@@ -44,4 +44,5 @@ public class BookPageAdminServlet extends HttpServlet {
         RequestDispatcher rd= context.getRequestDispatcher("/admin/admin_books.jsp");
         rd.forward(request, response);
     }
+
 }

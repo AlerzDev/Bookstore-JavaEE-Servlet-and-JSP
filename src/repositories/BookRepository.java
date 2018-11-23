@@ -87,7 +87,7 @@ public class BookRepository extends RepositoryBase {
 
             System.out.println(dateFormat.format(date));
             entityManager.clear();
-            TypedQuery<Book> query = entityManager.createQuery("SELECT c FROM Book c WHERE  c.RegDate BETWEEN :date and current_date ",Book.class).setParameter("date",d);
+            TypedQuery<Book> query = entityManager.createQuery("SELECT c FROM Book c WHERE  c.RegDate = current_date ",Book.class);
             items = query.getResultList();
         }catch (Exception ex)
         {
@@ -123,5 +123,14 @@ public class BookRepository extends RepositoryBase {
             ex.printStackTrace();
         }
         return  items;
+    }
+
+    public byte[] getArrayImage(long id){
+        try{
+            return entityManager.find(Book.class, id).getImage();
+        }catch (Exception ex) {
+            ex.printStackTrace();
+            return null;
+        }
     }
 }

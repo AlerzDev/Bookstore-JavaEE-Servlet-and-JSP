@@ -6,7 +6,186 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b712f71b-6c1a-4a67-9256-a93a57e75aed" name="Default Changelist" comment="" />
+    <list default="true" id="b712f71b-6c1a-4a67-9256-a93a57e75aed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/servlets/book/ImageServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/bases/RepositoryBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/bases/RepositoryBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/bases/ServletBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/bases/ServletBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/beans/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/beans/Session.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/beans/SessionBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/beans/SessionBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Author.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Bank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/CompanyCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/CompanyCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/CustomerPaymentCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/CustomerPaymentCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Editorial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Editorial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Format.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Format.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Genre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Genre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Language.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Language.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Municipality.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Municipality.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Sales.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Sales.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/ShoppingCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/ShoppingCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/TypeCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/TypeCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/UserBookstore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/UserBookstore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/UserBookstoreCustomerPayment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/entities/UserBookstoreCustomerPayment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/models/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/models/Response.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/AuthorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/AuthorRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/BankRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/BankRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/BookRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/CompanyCardRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/CompanyCardRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/CountryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/CountryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/CustomerPaymentCardRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/CustomerPaymentCardRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/EditorialRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/EditorialRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/FormatRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/FormatRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/GenreRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/GenreRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/LanguageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/LanguageRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/MunicipalityRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/MunicipalityRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/SalesRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/SalesRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/StateRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/StateRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/StatusRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/StatusRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/TypeCardRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/TypeCardRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/UserBookstoreCustomerPaymentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/UserBookstoreCustomerPaymentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/UserBookstoreRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/repositories/UserBookstoreRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/author/AuthorPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/author/AuthorPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/author/AuthorServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/author/AuthorServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/bank/BankPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/bank/BankPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/bank/BankServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/bank/BankServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/book/BookIndexPageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/book/BookIndexPageServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/book/BookPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/book/BookPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/book/BookServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/book/BookServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/book/CarBookServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/book/CarBookServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/book/ListBookPageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/book/ListBookPageServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/book/ShoppingCarPageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/book/ShoppingCarPageServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/companyCard/CompanyCardPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/companyCard/CompanyCardPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/companyCard/CompanyCardServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/companyCard/CompanyCardServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/country/CountryPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/country/CountryPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/country/CountryServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/country/CountryServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/editorial/EditorialPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/editorial/EditorialPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/editorial/EditorialServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/editorial/EditorialServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/format/FormatPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/format/FormatPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/format/FormatServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/format/FormatServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/genre/GenrePageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/genre/GenrePageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/genre/GenreServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/genre/GenreServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/language/LanguagePageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/language/LanguagePageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/language/LanguageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/language/LanguageServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/municipality/MunicipalityPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/municipality/MunicipalityPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/municipality/MunicipalityServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/municipality/MunicipalityServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/payment/PaymentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/payment/PaymentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/state/StatePageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/state/StatePageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/state/StateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/state/StateServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/status/StatusPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/status/StatusPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/status/StatusServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/status/StatusServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/typeCard/TypeCardPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/typeCard/TypeCardPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/typeCard/TypeCardServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/typeCard/TypeCardServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/userBookstore/LogInLogPageClientServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/userBookstore/LogInLogPageClientServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/userBookstore/ProfileServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/userBookstore/ProfileServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/userBookstore/SessionUserBookstoreServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/userBookstore/SessionUserBookstoreServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/userBookstore/UserBookstoreServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/servlets/userBookstore/UserBookstoreServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/utils/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/classes/utils/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/tags/layouts/admin.tag" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/WEB-INF/tags/layouts/admin.tag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/admin/assets/vendor/jquery.scrollbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/admin/assets/vendor/jquery.scrollbar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/admin/assets/vendor/jquery.scrollbar/jquery.scrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/admin/assets/vendor/jquery.scrollbar/jquery.scrollbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/admin/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/admin/assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/admin/assets/vendor/jquery.scrollbar/license-gpl.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/admin/assets/vendor/jquery.scrollbar/license-gpl.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/admin/assets/vendor/jquery.scrollbar/license-mit.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/admin/assets/vendor/jquery.scrollbar/license-mit.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/admin/assets/vendor/jquery.scrollbar/meteor/tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/admin/assets/vendor/jquery.scrollbar/meteor/tests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/admin/assets/vendor/jquery.scrollbar/package.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/admin/assets/vendor/jquery.scrollbar/package.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/admin/assets/vendor/jquery.scrollbar/scrollbar.jquery.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/admin/assets/vendor/jquery.scrollbar/scrollbar.jquery.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/admin/assets/vendor/prismjs/components/prism-n4js.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/admin/assets/vendor/prismjs/components/prism-n4js.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/client/assets/js/plugins/bootstrap-datetimepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/client/assets/js/plugins/bootstrap-datetimepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bookstore_war_exploded/js/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/bases/RepositoryBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/bases/RepositoryBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/bases/ServletBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/bases/ServletBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/beans/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/beans/Session.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/beans/SessionBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/beans/SessionBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/entities/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/entities/Author.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/entities/Bank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/entities/Bank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/entities/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/entities/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/entities/CompanyCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/entities/CompanyCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/entities/Country.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/entities/Country.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/entities/CustomerPaymentCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/entities/CustomerPaymentCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/entities/Editorial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/entities/Editorial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/entities/Format.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/entities/Format.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/entities/Genre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/entities/Genre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/entities/Language.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/entities/Language.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/entities/Municipality.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/entities/Municipality.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/entities/Sales.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/entities/Sales.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/entities/ShoppingCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/entities/ShoppingCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/entities/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/entities/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/entities/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/entities/Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/entities/TypeCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/entities/TypeCard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/entities/UserBookstore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/entities/UserBookstore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/entities/UserBookstoreCustomerPayment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/entities/UserBookstoreCustomerPayment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/models/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/models/Response.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/repositories/AuthorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/repositories/AuthorRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/repositories/BankRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/repositories/BankRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/repositories/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/repositories/BookRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/repositories/CompanyCardRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/repositories/CompanyCardRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/repositories/CountryRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/repositories/CountryRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/repositories/CustomerPaymentCardRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/repositories/CustomerPaymentCardRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/repositories/EditorialRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/repositories/EditorialRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/repositories/FormatRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/repositories/FormatRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/repositories/GenreRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/repositories/GenreRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/repositories/LanguageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/repositories/LanguageRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/repositories/MunicipalityRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/repositories/MunicipalityRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/repositories/SalesRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/repositories/SalesRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/repositories/StateRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/repositories/StateRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/repositories/StatusRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/repositories/StatusRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/repositories/TypeCardRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/repositories/TypeCardRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/repositories/UserBookstoreCustomerPaymentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/repositories/UserBookstoreCustomerPaymentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/repositories/UserBookstoreRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/repositories/UserBookstoreRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/author/AuthorPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/author/AuthorPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/author/AuthorServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/author/AuthorServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/bank/BankPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/bank/BankPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/bank/BankServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/bank/BankServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/book/BookIndexPageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/book/BookIndexPageServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/book/BookPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/book/BookPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/book/BookServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/book/BookServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/book/CarBookServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/book/CarBookServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/book/ListBookPageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/book/ListBookPageServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/book/ShoppingCarPageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/book/ShoppingCarPageServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/companyCard/CompanyCardPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/companyCard/CompanyCardPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/companyCard/CompanyCardServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/companyCard/CompanyCardServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/country/CountryPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/country/CountryPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/country/CountryServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/country/CountryServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/editorial/EditorialPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/editorial/EditorialPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/editorial/EditorialServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/editorial/EditorialServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/format/FormatPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/format/FormatPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/format/FormatServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/format/FormatServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/genre/GenrePageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/genre/GenrePageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/genre/GenreServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/genre/GenreServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/language/LanguagePageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/language/LanguagePageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/language/LanguageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/language/LanguageServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/municipality/MunicipalityPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/municipality/MunicipalityPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/municipality/MunicipalityServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/municipality/MunicipalityServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/payment/PaymentServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/payment/PaymentServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/state/StatePageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/state/StatePageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/state/StateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/state/StateServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/status/StatusPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/status/StatusPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/status/StatusServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/status/StatusServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/typeCard/TypeCardPageAdminServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/typeCard/TypeCardPageAdminServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/typeCard/TypeCardServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/typeCard/TypeCardServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/userBookstore/LogInLogPageClientServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/userBookstore/LogInLogPageClientServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/userBookstore/ProfileServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/userBookstore/ProfileServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/userBookstore/SessionUserBookstoreServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/userBookstore/SessionUserBookstoreServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/servlets/userBookstore/UserBookstoreServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/servlets/userBookstore/UserBookstoreServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bookstore/utils/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Bookstore/utils/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlets/book/BookPageAdminServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/book/BookPageAdminServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/tags/layouts/admin.tag" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/tags/layouts/admin.tag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/js/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/utils.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,25 +207,22 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Bookstore@192.168.0.14" type="feb32156:DbDataSourceImpl" />
+        <item name="@192.168.0.14" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Bookstore@192.168.0.14" type="feb32156:DbDataSourceImpl" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Bookstore@192.168.0.14" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="Bookstore: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Bookstore@192.168.0.14" type="feb32156:DbDataSourceImpl" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="Bookstore: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="Book: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -111,6 +287,52 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1048350888">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="240" />
+          <entry key="js" value="1" />
+          <entry key="jsp" value="207" />
+          <entry key="sql" value="113" />
+          <entry key="tag" value="18" />
+          <entry key="xml" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="2" />
+          <entry key="JAVA" value="240" />
+          <entry key="JSP" value="223" />
+          <entry key="JavaScript" value="1" />
+          <entry key="Scratch" value="113" />
+          <entry key="XML" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="5" />
+          <entry key="jsp" value="4" />
+          <entry key="sql" value="4" />
+          <entry key="tag" value="4" />
+          <entry key="xml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="5" />
+          <entry key="JSP" value="8" />
+          <entry key="Scratch" value="4" />
+          <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Bookstore" />
@@ -118,19 +340,27 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/js/utils.js">
+        <entry file="file://$PROJECT_DIR$/web/admin/admin_report.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            <state relative-caret-position="108">
+              <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#canvas#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlets/book/BookServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="166">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="29" selection-end-column="101" />
             </state>
           </provider>
         </entry>
@@ -138,54 +368,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/tags/layouts/admin.tag">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="240" column="62" selection-start-line="240" selection-start-column="62" selection-end-line="240" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/entities/Book.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-272">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/admin/admin_books.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5396" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/requests.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7f6ca9b0-5e93-4ead-ba5b-9f559dc3ae9d/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlets/book/BookIndexPageServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="30" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="308">
+              <caret line="209" selection-start-line="209" selection-end-line="209" />
             </state>
           </provider>
         </entry>
@@ -197,23 +381,24 @@
       <list>
         <option value="JavaScript File" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>new-country-form</find>
+      <find>jess</find>
+      <find>img</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/servlets/state/StateServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlets/country/CountryServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlets/language/LanguagePageAdminServlet.java" />
-        <option value="$PROJECT_DIR$/src/servlets/genre/GenrePageAdminServlet.java" />
         <option value="$PROJECT_DIR$/src/servlets/author/AuthorServlet.java" />
         <option value="$PROJECT_DIR$/src/servlets/country/CountryPageAdminServlet.java" />
         <option value="$PROJECT_DIR$/src/servlets/genre/GenreServlet.java" />
@@ -237,7 +422,6 @@
         <option value="$PROJECT_DIR$/src/repositories/CompanyCardRepository.java" />
         <option value="$PROJECT_DIR$/src/servlets/companyCard/CompanyCardServlet.java" />
         <option value="$PROJECT_DIR$/web/admin/admin_company_card.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/tags/layouts/admin.tag" />
         <option value="$PROJECT_DIR$/src/servlets/companyCard/CompanyCardPageAdminServlet.java" />
         <option value="$PROJECT_DIR$/src/entities/Sales.java" />
         <option value="$PROJECT_DIR$/src/entities/UserBookstoreCustomerPayment.java" />
@@ -247,20 +431,25 @@
         <option value="$PROJECT_DIR$/src/repositories/CustomerPaymentCardRepository.java" />
         <option value="$PROJECT_DIR$/src/servlets/book/ShoppingCarPageServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/tags/layouts/layout_client.tag" />
-        <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/web/client/client_list_car.jsp" />
         <option value="$PROJECT_DIR$/src/beans/SessionBean.java" />
         <option value="$PROJECT_DIR$/src/servlets/book/CarBookServlet.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7f6ca9b0-5e93-4ead-ba5b-9f559dc3ae9d/console.sql" />
         <option value="$PROJECT_DIR$/src/repositories/SalesRepository.java" />
         <option value="$PROJECT_DIR$/src/servlets/userBookstore/ProfileServlet.java" />
         <option value="$PROJECT_DIR$/web/client/client_profile.jsp" />
-        <option value="$PROJECT_DIR$/src/repositories/BookRepository.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/client/client_list_book.jsp" />
-        <option value="$PROJECT_DIR$/src/servlets/book/BookPageAdminServlet.java" />
         <option value="$PROJECT_DIR$/src/servlets/book/BookServlet.java" />
         <option value="$PROJECT_DIR$/web/js/utils.js" />
+        <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7f6ca9b0-5e93-4ead-ba5b-9f559dc3ae9d/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/be2ef9d9-5929-4b38-94f7-93839259c788/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7a8ebcf1-e7e6-43eb-ae98-d82913005f43/console.sql" />
+        <option value="$PROJECT_DIR$/src/servlets/book/BookPageAdminServlet.java" />
+        <option value="$PROJECT_DIR$/src/repositories/BookRepository.java" />
+        <option value="$PROJECT_DIR$/src/servlets/book/ImageServlet.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/tags/layouts/admin.tag" />
+        <option value="$PROJECT_DIR$/web/admin/admin_report.jsp" />
       </list>
     </option>
   </component>
@@ -277,11 +466,10 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="204" />
-    <option name="y" value="27" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1440" />
+    <option name="height" value="827" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -310,19 +498,26 @@
         <subPane>
           <expand>
             <path>
-              <item name="Bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bookstore" type="462c0819:PsiDirectoryNode" />
+              <item name="Bookstore-JavaEE-Servlet-and-JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bookstore-JavaEE-Servlet-and-JSP" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Bookstore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bookstore" type="462c0819:PsiDirectoryNode" />
+              <item name="Bookstore-JavaEE-Servlet-and-JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bookstore-JavaEE-Servlet-and-JSP" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bookstore-JavaEE-Servlet-and-JSP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bookstore-JavaEE-Servlet-and-JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -332,12 +527,13 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542859828495" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542919419301" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/entities" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.49425286" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -367,7 +563,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="TomEE 8.5.32" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 9.0.12" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="TomEE 8.5.32" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 8.5.6" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/BookIndexPage" />
       <deployment>
         <artifact name="Bookstore:war exploded">
@@ -459,16 +655,17 @@
       <workItem from="1542823632137" duration="8099000" />
       <workItem from="1542831975038" duration="26540000" />
       <workItem from="1542898446332" duration="4593000" />
+      <workItem from="1542910644613" duration="6506000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93107000" />
+    <option name="totallyTimeSpent" value="99613000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="827" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7369985" visible="true" weight="0.18763326" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7357441" visible="true" weight="0.19027181" />
       <window_info id="Structure" order="1" sideWeight="0.4440433" side_tool="true" weight="0.18176973" />
       <window_info id="Persistence" order="2" sideWeight="0.4440433" side_tool="true" weight="0.18176973" />
       <window_info id="Designer" order="3" />
@@ -477,29 +674,29 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Image Layers" order="7" />
       <window_info id="EJB" order="8" side_tool="true" />
-      <window_info id="Web" order="9" sideWeight="0.26300147" side_tool="true" visible="true" weight="0.18763326" />
+      <window_info id="Web" order="9" sideWeight="0.2642559" side_tool="true" visible="true" weight="0.19027181" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27006507" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2698192" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3977747" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32905483" />
-      <window_info anchor="bottom" id="Database Console" order="8" weight="0.3286334" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32823366" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.329718" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32962447" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" weight="0.329718" />
-      <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="CDI" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.18336888" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.18311875" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -599,41 +796,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/entities/CompanyCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/Bank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/TypeCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/admin_type_card.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-571">
-          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/status/StatusServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlets/companyCard/CompanyCardServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -760,13 +922,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/admin/admin_author.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="45" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/servlets/book/ListBookPageServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -792,13 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -858,27 +1006,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/client/client_list_book.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="49" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7f6ca9b0-5e93-4ead-ba5b-9f559dc3ae9d/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -886,49 +1013,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/book/BookPageAdminServlet.java">
+    <entry file="file://F:/itl/Bookstore-JavaEE-Servlet-and-JSP/web/js/utils.js" />
+    <entry file="file://$PROJECT_DIR$/web/js/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="270">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/repositories/BookRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/entities/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="101" column="12" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/itl/Bookstore-JavaEE-Servlet-and-JSP/web/js/utils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tags/layouts/admin.tag">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="240" column="62" selection-start-line="240" selection-start-column="62" selection-end-line="240" selection-end-column="62" />
+        <state relative-caret-position="105">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/admin/admin_books.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5396" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/book/BookIndexPageServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/js/requests.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="30" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="567">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -939,24 +1045,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entities/Book.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7f6ca9b0-5e93-4ead-ba5b-9f559dc3ae9d/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/be2ef9d9-5929-4b38-94f7-93839259c788/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="42">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/requests.js">
+    <entry file="file://$PROJECT_DIR$/src/servlets/book/BookIndexPageServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        <state relative-caret-position="418">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="30" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/utils.js">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7a8ebcf1-e7e6-43eb-ae98-d82913005f43/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        <state relative-caret-position="168">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/book/ImageServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/book/BookPageAdminServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="818">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/repositories/BookRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="127" column="41" selection-start-line="127" selection-start-column="41" selection-end-line="127" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tags/components/modal.tag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-222" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1355">
+          <caret line="35" column="144" lean-forward="true" selection-start-line="35" selection-start-column="144" selection-end-line="35" selection-end-column="144" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/client/client_list_book.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="32" column="90" lean-forward="true" selection-start-line="32" selection-start-column="90" selection-end-line="32" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/admin_author.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/tags/layouts/admin.tag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="209" selection-start-line="209" selection-end-line="209" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="29" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/admin/admin_report.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#canvas#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -991,6 +1188,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>material</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1002,7 +1200,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>11</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1019,6 +1217,7 @@
             <option name="proportions">
               <list>
                 <option value="0.49425286" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

@@ -53,9 +53,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="media align-items-center">
-                                  <span class="avatar avatar-sm rounded-circle">
-                                    <img alt="Image placeholder" src=".${pageContext.request.contextPath}/admin/assets/img/theme/team-1-800x800.jpg">
-                                  </span>
+
                             </div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
@@ -93,7 +91,6 @@
                         <div class="row">
                             <div class="col-6 collapse-brand">
                                 <a href="./index.html">
-                                    <img src="${pageContext.request.contextPath}/admin/assets/img/brand/blue.png">
                                 </a>
                             </div>
                             <div class="col-6 collapse-close">
@@ -117,6 +114,11 @@
                     </form>
                     <!-- Navigation -->
                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="${pageContext.request.contextPath}/admin/admin_report.jsp">
+                                <i class="ni ni-tv-2 text-primary"></i> Report
+                            </a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="${pageContext.request.contextPath}/CountryPageAdmin">
                                 <i class="ni ni-tv-2 text-primary"></i> Countries
@@ -205,10 +207,8 @@
                             <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="media align-items-center">
                                     <span class="avatar avatar-sm rounded-circle">
-                                      <img alt="Image placeholder" src="${pageContext.request.contextPath}/admin/assets/img/theme/team-4-800x800.jpg">
                                     </span>
                                     <div class="media-body ml-2 d-none d-lg-block">
-                                        <span class="mb-0 text-sm  font-weight-bold">Jessica Jones</span>
                                     </div>
                                 </div>
                             </a>

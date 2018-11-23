@@ -23,7 +23,7 @@
         <class>entities.UserBookstoreCustomerPayment</class>
         <class>entities.Sales</class>
         <properties>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://192.168.0.14:3306/Bookstore?autoReconnect=true&amp;useSSL=false"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/Bookstore?autoReconnect=true&amp;useSSL=false"/>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.user" value="root"/>
             <property name="javax.persistence.jdbc.password" value="alamierda123"/>
