@@ -12,7 +12,9 @@
                     <div class="row">
                         <div class="col-md-6 ml-auto mr-auto">
                             <div class="profile">
-                                <div class="name">
+                                <div class="avatar">
+                                </div>
+                                <div class="name" style="margin-top: 40px">
                                     <h3>${currentSession.currentSession().username}</h3>
                                     <h3>${currentSession.currentSession().email}</h3>
                                 </div>
